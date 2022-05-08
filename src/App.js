@@ -1,10 +1,13 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-
+import Header from './components/MemeGenerator/Header';
+import Body from './components/MemeGenerator/Body';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <div className="meme">
+        <Header />
+        <Body />
+      </div>
     </div>
   );
 }

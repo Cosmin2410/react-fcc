@@ -1,21 +1,43 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+.meme-header {
   padding: 1rem;
+  background: linear-gradient(90deg, rgb(148, 51, 238) 1.18%, #a626d3 100%);
+  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: 1.3rem;
 }
 
-nav ul {
+.meme__form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.meme__button {
+  grid-column: 1 /-1;
+  background: linear-gradient(90deg, rgb(148, 51, 238) 1.18%, #a626d3 100%);
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.meme__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
-nav ul li {
-  list-style: none;
+.meme__image {
+  max-width: 100%;
+  margin: 0 auto;
 }
