@@ -2,6 +2,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+}
+
+button {
+  cursor: pointer;
 }
 
 .meme-header {
@@ -40,4 +45,12 @@ body {
 .meme__image {
   max-width: 100%;
   margin: 0 auto;
+}
+
+.practice__container {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
