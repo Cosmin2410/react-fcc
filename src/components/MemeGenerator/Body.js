@@ -2,14 +2,26 @@ import { React, useState } from 'react';
 import memesData from '../../memesData';
 
 function Body() {
-  const [meme, setMeme] = useState('https://i.imgflip.com/30b1gx.jpg');
+  // const [meme, setMeme] = useState('https://i.imgflip.com/30b1gx.jpg');
+  const [meme, setMeme] = useState({
+    topText: '',
+    bottomText: '',
+    randomImage: 'https://i.imgflip.com/30b1gx.jpg',
+  });
+
+  const [allMemeImages, setAllMemeImages] = useState(memesData);
 
   const getMeme = (e) => {
     e.preventDefault();
-    const memesArr = memesData.data.memes;
+    const memesArr = allMemeImages.data.memes;
     const randomNum = Math.floor(Math.random() * memesArr.length);
     const url = memesArr[randomNum].url;
-    setMeme(url);
+    setMeme((prevMeme) => {
+      return {
+        ...prevMeme,
+        randomImage: url,
+      };
+    });
   };
 
   return (
@@ -23,7 +35,7 @@ function Body() {
       </form>
 
       <div className="meme__container">
-        <img src={meme} className="meme__image" alt="meme image" />
+        <img src={meme.randomImage} className="meme__image" alt="meme image" />
       </div>
     </main>
   );
