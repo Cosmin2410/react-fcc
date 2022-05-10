@@ -3,8 +3,10 @@ import React, { useState } from 'react';
 function Practice2() {
   const [randomNum, setRandomNum] = useState(0);
 
+  const random = Math.floor(Math.random() * 1000);
+
   const createRandomNum = () => {
-    console.log(true);
+    setRandomNum(random);
   };
 
   return (

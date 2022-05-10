@@ -59,12 +59,11 @@ button {
 
 .practice__2 {
   font-size: 2rem;
-  /* margin: 10rem; */
   color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 20rem;
+  max-width: 15rem;
   margin: 0 auto;
   text-align: center;
   margin-top: 10rem;
