@@ -53,4 +53,20 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
+  font-size: 2rem;
+}
+
+.practice__2 {
+  font-size: 2rem;
+  /* margin: 10rem; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
