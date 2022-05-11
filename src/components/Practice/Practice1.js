@@ -12,7 +12,7 @@ function Practive() {
   };
 
   const reset = () => {
-    setNum((prevNum) => (prevNum = 0));
+    setNum(0);
   };
 
   return (
